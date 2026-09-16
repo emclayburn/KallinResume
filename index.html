@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kallin Freestone | Journalism and Sports Media</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+
+  :root {
+    --paper: #FAF8F3;
+    --ink: #1A1A1A;
+    --masthead: #8B2318;
+    --gray: #6B6B6B;
+    --rule: #D4D0C4;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Source Sans 3', sans-serif;
+    line-height: 1.65;
+  }
+
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ---- Masthead ---- */
+  .masthead {
+    padding: 56px 0 28px;
+    border-bottom: 3px solid var(--ink);
+  }
+
+  .masthead .eyebrow {
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    color: var(--masthead);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 3.4rem;
+    margin: 0 0 12px;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+  }
+
+  .masthead .subhead {
+    font-size: 1.1rem;
+    color: var(--gray);
+    max-width: 46ch;
+  }
+
+  .masthead-rule {
+    margin-top: 24px;
+    height: 1px;
+    background: var(--rule);
+  }
+
+  .links {
+    margin-top: 20px;
+    display: flex;
+    gap: 22px;
+    font-size: 0.95rem;
+  }
+
+  .links a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 2px;
+  }
+
+  .links a:hover { color: var(--masthead); border-color: var(--masthead); }
+
+  /* ---- Sections ---- */
+  section {
+    padding: 44px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  section:last-of-type { border-bottom: none; }
+
+  .section-label {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--masthead);
+    margin: 0 0 22px;
+  }
+
+  .about p {
+    font-size: 1.08rem;
+    max-width: 62ch;
+    margin: 0 0 16px;
+  }
+
+  .about p:last-child { margin-bottom: 0; }
+
+  /* ---- Skills as inline list, not pill buttons ---- */
+  .skills {
+    margin-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 0;
+    font-size: 0.92rem;
+    color: var(--gray);
+  }
+
+  .skills span:not(:last-child)::after {
+    content: "  \00b7  ";
+    color: var(--rule);
+  }
+
+  /* ---- Clips ---- */
+  .clip {
+    padding: 26px 0;
+    border-top: 1px solid var(--rule);
+  }
+
+  .clip:first-of-type { border-top: none; padding-top: 0; }
+
+  .clip h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 1.32rem;
+    margin: 0 0 8px;
+    line-height: 1.3;
+  }
+
+  .clip h3 a {
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .clip h3 a:hover { color: var(--masthead); }
+
+  .clip .meta {
+    font-size: 0.86rem;
+    color: var(--masthead);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+  }
+
+  .clip .meta .outlet { color: var(--gray); font-weight: 400; }
+
+  .clip p.dek {
+    color: #3A3A3A;
+    font-size: 1rem;
+    max-width: 60ch;
+    margin: 0 0 10px;
+  }
+
+  .clip .read-link {
+    font-size: 0.9rem;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gray);
+  }
+
+  .clip .read-link:hover { color: var(--masthead); border-color: var(--masthead); }
+
+  /* ---- Contact ---- */
+  .contact p {
+    font-size: 1.05rem;
+    margin: 0;
+  }
+
+  .contact a {
+    color: var(--ink);
+    border-bottom: 1px solid var(--ink);
+    text-decoration: none;
+  }
+
+  .contact a:hover { color: var(--masthead); border-color: var(--masthead); }
+
+  footer {
+    padding: 30px 0 50px;
+    color: var(--gray);
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 600px) {
+    .masthead { padding: 40px 0 22px; }
+    .masthead h1 { font-size: 2.5rem; }
+    section { padding: 34px 0; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="eyebrow">PORTFOLIO</div>
+    <h1>Kallin Freestone</h1>
+    <p class="subhead">Journalism &amp; sports media graduate — writing, broadcast, and audio production.</p>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/kallin-freestone" target="_blank">LinkedIn</a>
+      <a href="resume.pdf" target="_blank">Résumé</a>
+      <a href="mailto:freestonekallin10@gmail.com">Email</a>
+    </div>
+    <div class="masthead-rule"></div>
+  </header>
+
+  <section class="about">
+    <p class="section-label">About</p>
+    <p>
+      I'm a recent BYU grad with a degree in Journalism and Sports Media, and I've built my experience
+      around one simple idea: sports are better with a good story attached. During school, I wrote for
+      The Daily Universe, BYU's student newspaper, while also working across broadcast production and
+      social content — calling games, cutting highlight reels, and finding the angle that makes a story
+      worth reading.
+    </p>
+    <p>
+      I like moving fast, working with a team, and figuring out the right format for a story depending
+      on where it's going to live — an article reads different than a highlight reel, and I care about
+      getting both right. I'm looking for a role where I can keep telling stories, whatever form that takes.
+    </p>
+    <section class="skills">
+      <p class="section-label">Skills</p>
+    <div>
+      <span>AP Style</span>
+      <span>Interviewing</span>
+      <span>Reporting</span>
+      <span>Storytelling &amp; Narrative Development</span>
+      <span>Audio Editing &amp; Production</span>
+      <span>Podcast Production</span>
+      <span>Social Media Content Strategy</span>
+      <span>Adobe Audition</span>
+      <span>Adobe Premiere Pro</span>
+    </div>
+  </section>
+
+  <section class="clips">
+    <p class="section-label">Articles</p>
+
+    <article class="clip">
+      <h3><a href="https://universe.byu.edu/sports/no-8-byu-showcases-paint-presence-and-pressure-defense-in-its-98-53-win-over-holy-cross" target="_blank">No. 8 BYU Showcases Paint Presence and Pressure Defense in Its 98-53 Win Over Holy Cross</a></h3>
+      <p class="meta"><span class="outlet">The Daily Universe</span> · November 2025</p>
+      <p class="dek">Game coverage of BYU men's basketball's blowout win over Holy Cross, breaking down the Cougars' defensive pressure and interior scoring with quotes from Coach Kevin Young.</p>
+      <a class="read-link" href="https://universe.byu.edu/sports/no-8-byu-showcases-paint-presence-and-pressure-defense-in-its-98-53-win-over-holy-cross" target="_blank">Read the article</a>
+    </article>
+
+    <article class="clip">
+      <h3><a href="https://universe.byu.edu/sports/branches-of-jeff-judkins-coaching-tree-collide-as-assistants-turned-head-coaches-meet-in-byus-70-51-win" target="_blank">Branches of Jeff Judkins' Coaching Tree Collide as Assistants Turned Head Coaches Meet in BYU's 70-51 Win</a></h3>
+      <p class="meta"><span class="outlet">The Daily Universe</span> · November 2025</p>
+      <p class="dek">Feature-style game story connecting BYU women's basketball's win over San José State to a shared coaching lineage, with insight from head coach Lee Cummard on the program's legacy.</p>
+      <a class="read-link" href="https://universe.byu.edu/sports/branches-of-jeff-judkins-coaching-tree-collide-as-assistants-turned-head-coaches-meet-in-byus-70-51-win" target="_blank">Read the article</a>
+    </article>
+
+    <article class="clip">
+      <h3><a href="https://universe.byu.edu/sports/former-byu-basketball-star-emma-calvert-has-gone-from-plain-city-to-czech-republic" target="_blank">Former BYU Basketball Star Emma Calvert Has Gone From Plain City to Czech Republic</a></h3>
+      <p class="meta"><span class="outlet">The Daily Universe</span> · December 2025</p>
+      <p class="dek">Profile on BYU women's basketball alum Emma Calvert, following her path from small-town Utah to a professional career overseas.</p>
+      <a class="read-link" href="https://universe.byu.edu/sports/former-byu-basketball-star-emma-calvert-has-gone-from-plain-city-to-czech-republic" target="_blank">Read the article</a>
+    </article>
+
+    <article class="clip">
+      <h3><a href="https://universe.byu.edu/2023/10/12/winning-culture-byu-remaining-dominant-despite-new-conference-and-opponents/" target="_blank">Winning Culture: BYU Remaining Dominant Despite New Conference and Opponents</a></h3>
+      <p class="meta"><span class="outlet">The Daily Universe</span> · October 2023</p>
+      <p class="dek">Analysis piece on BYU women's volleyball's strong start to its first Big 12 season, highlighting standout players and the program's historic winning record.</p>
+      <a class="read-link" href="https://universe.byu.edu/2023/10/12/winning-culture-byu-remaining-dominant-despite-new-conference-and-opponents/" target="_blank">Read the article</a>
+    </article>
+  </section>
+
+  <section class="clips">
+    <p class="section-label">Podcast</p>
+    <article class="clip">
+      <h3><a href="https://open.spotify.com/show/033H3q1h4PTednLjWDrbxG" target="_blank">Sisterly Chaos</a></h3>
+      <p class="meta"><span class="outlet">Co-Host</span> · Weekly Podcast</p>
+      <p class="dek">A weekly podcast I co-host with my sister covering life, relationships, and everyday conversation — hands-on experience with recording, editing, and audio production alongside building an audience episode to episode.</p>
+      <a class="read-link" href="https://open.spotify.com/show/033H3q1h4PTednLjWDrbxG" target="_blank">Listen on Spotify</a>
+    </article>
+  </section>
+
+  <section class="contact">
+    <p class="section-label">Contact</p>
+    <p>Email: <a href="mailto:freestonekallin10@gmail.com">freestonekallin10@gmail.com</a></p>
+  </section>
+
+  <footer>
+    &copy; 2026 Kallin Freestone
+  </footer>
+
+</div>
+</body>
+</html>
